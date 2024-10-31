@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نشاطات المدرسة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .activity {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer; /* تظهر كأنها قابلة للنقر */
+            text-decoration: none; /* إزالة الخط السفلي من الرابط */
+            color: inherit; /* استخدام لون النص الافتراضي */
+        }
+
+        .activity:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .activity h2 {
+            font-size: 24px;
+            color: #2C3E50;
+            margin: 15px 0 5px 0;
+            padding: 0 10px;
+        }
+
+        .activity p {
+            font-size: 16px;
+            color: #555;
+            padding: 0 10px 15px 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .activity h2 {
+                font-size: 20px;
+            }
+
+            .activity p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>نشاطات المدرسة</h1>
+    </header>
+
+    <div class="container">
+        <div class="activities">
+
+            <a href="sports.html" class="activity">
+                <img src="https://via.placeholder.com/800x400?text=%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A" alt="النشاط الرياضي">
+                <h2>النشاط الرياضي</h2>
+                <p>تقام أنشطة رياضية متنوعة مثل كرة القدم، السلة، والعدو، تهدف إلى تعزيز الروح الرياضية والتعاون بين الطلاب.</p>
+            </a>
+
+            <a href="art.html" class="activity">
+                <img src="https://via.placeholder.com/800x400?text=%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7+%D8%A7%D9%84%D9%81%D9%86%D9%8A" alt="النشاط الفني">
+                <h2>النشاط الفني</h2>
+                <p>تشمل الأنشطة الفنية ورش عمل للرسم، والموسيقى، والمسرح، لتطوير المواهب الفنية لدى الطلاب.</p>
+            </a>
+
+            <a href="cultural.html" class="activity">
+                <img src="https://via.placeholder.com/800x400?text=%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7+%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D9%8A" alt="النشاط الثقافي">
+                <h2>النشاط الثقافي</h2>
+                <p>تقوم المدرسة بتنظيم مسابقات ثقافية وندوات لتعزيز المعرفة والثقافة بين الطلاب.</p>
+            </a>
+
+            <a href="environmental.html" class="activity">
+                <img src="https://via.placeholder.com/800x400?text=%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7+%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D9%8A" alt="النشاط البيئي">
+                <h2>النشاط البيئي</h2>
+                <p>تقوم المدرسة بمبادرات للحفاظ على البيئة، مثل زراعة الأشجار وتنظيف المناطق المحيطة بالمدرسة.</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 نشاطات المدرسة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+
+</html>
+  
